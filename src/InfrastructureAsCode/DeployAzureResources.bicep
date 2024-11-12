@@ -26,8 +26,8 @@ param restore bool = false
 param apimPublisherEmail string = 'support@contososuites.com'
 
 var apiManagementServiceName = 'apim-${uniqueString(resourceGroup().id)}'
-var apimSku = 'Basicv2'
-var apimSkuCount = 1
+var apimSku = 'Consumption'
+var apimSkuCount = 0
 var apimPublisherName = 'Contoso Suites'
 
 var cosmosDbName = '${uniqueString(resourceGroup().id)}-cosmosdb'
